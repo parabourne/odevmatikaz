@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ödevmatik Azərbaycan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fc;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header */
+        header {
+            width: 100%;
+            padding: 15px;
+            background-color: #4a90e2;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            transition: background 0.3s;
+            border-radius: 8px;
+        }
+        nav ul li a:hover {
+            background: #357ABD;
+        }
+
+        /* Hero Section */
+        #hero {
+            width: 100%;
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #eaf2fb;
+            color: #333;
+        }
+        #hero h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #666;
+        }
+        #hero button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #hero button:hover {
+            background-color: #357ABD;
+        }
+
+        /* Section Styling */
+        section {
+            width: 100%;
+            max-width: 1200px;
+            margin: 40px 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 1.8rem;
+            color: #4a90e2;
+            margin-bottom: 20px;
+        }
+        .assignment-options, .exercise-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .assignment-item, .exercise-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .assignment-item:hover, .exercise-item:hover {
+            transform: translateY(-5px);
+        }
+        .assignment-item h3, .exercise-item h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .assignment-item p, .exercise-item p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .assignment-item button, .exercise-item button {
+            background-color: #4a90e2;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            font-size: 0.9rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .assignment-item button:hover, .exercise-item button:hover {
+            background-color: #357ABD;
+        }
+
+        /* Footer */
+        footer {
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Ödevmatik Azərbaycan</h1>
+        <nav>
+            <ul>
+                <li><a href="#assignments">Tapşırıqlar</a></li>
+                <li><a href="#exercises">Məşqlər</a></li>
+                <li><a href="#about">Haqqında</a></li>
+                <li><a href="#contact">Əlaqə</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Azərbaycan təhsil sistemi üçün interaktiv tapşırıq platforması</h2>
+        <p>Müəllimlər və şagirdlər üçün fərdi tapşırıqlar yaratmaq asanlaşdı.</p>
+        <button>Platformaya Başla</button>
+    </section>
+
+    <!-- Assignments Section -->
+    <section id="assignments">
+        <h2>Tapşırıqlar</h2>
+        <div class="assignment-options">
+            <div class="assignment-item">
+                <h3>Azərbaycan Dili</h3>
+                                <p>Qrammatika, mətn analizi və daha çox.</p>
+                <button>Tapşırıq Yarat</button>
+            </div>
+            <div class="assignment-item">
+                <h3>Riyaziyyat</h3>
+                <p>Əsas riyazi əməliyyatlar və problemlər.</p>
+                <button>Tapşırıq Yarat</button>
+            </div>
+            <div class="assignment-item">
+                <h3>Fizika</h3>
+                <p>Sadə təcrübələr və riyazi hesablama.</p>
+                <button>Tapşırıq Yarat</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercises Section -->
+    <section id="exercises">
+        <h2>Məşqlər</h2>
+        <div class="exercise-list">
+            <div class="exercise-item">
+                <h3>Azərbaycan dili üçün məşqlər</h3>
+                <p>Mövzu üzrə müxtəlif çalışmalar və suallar.</p>
+                <button>Məşqə Başla</button>
+                            </div>
+            <div class="exercise-item">
+                <h3>Riyaziyyat məsələləri</h3>
+                <p>Riyaziyyat üzrə məşqlər və problemlər.</p>
+                <button>Məşqə Başla</button>
+            </div>
+            <div class="exercise-item">
+                <h3>Fizika sualları</h3>
+                <p>Fizika üzrə məşqlər və təcrübələr.</p>
+                <button>Məşqə Başla</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Haqqında</h2>
+        <p>Ödevmatik, müəllimlər üçün dərslik tapşırıqları yaratmağa imkan verən bir platformadır. Şagirdlər də öz bacarıqlarını inkişaf etdirmək üçün müxtəlif məşqlərdən istifadə edə bilərlər.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Əlaqə</h2>
+        <p>Suallarınız varsa, bizimlə əlaqə saxlaya bilərsiniz:</p>
+        <p>Email: info@odevmatik.az</p>
+        <p>Telefon: +994 55 123 45 67</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ödevmatik Azərbaycan. Bütün hüquqlar qorunur.</p>
+    </footer>
+
+</body>
+</html>
